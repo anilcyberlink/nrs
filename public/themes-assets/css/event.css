@@ -1,0 +1,344 @@
+/*********************************************History page CSS*****************************************************/
+
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 18%, rgba(255,255,255,0.8547794117647058)) , url(../images/bread-bg.jpg);
+  padding: 4rem 8rem; 
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.timeline-container .vertical-scrollable-timeline {
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+}
+.timeline-container .vertical-scrollable-timeline .list-progress {
+  width: 8px;
+  height: 100%;
+  background-color: #d30017;
+  position: absolute;
+  left: 48px;
+  top: 0;
+  overflow: hidden;
+}
+.timeline-container .vertical-scrollable-timeline .list-progress .inner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #c5c3cb;
+  width: 100%;
+}
+.timeline-container .vertical-scrollable-timeline li {
+  position: relative;
+  padding: 25px 0px 45px 158px;
+}
+.timeline-container .vertical-scrollable-timeline li:last-child {
+  margin-bottom: 0;
+}
+.timeline-container .vertical-scrollable-timeline li h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  color: #d30017;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.timeline-container .vertical-scrollable-timeline li p {
+  line-height: 2;
+}
+.timeline-container .vertical-scrollable-timeline li p:last-child {
+  margin-bottom: 0;
+}
+.bottom-p{
+  font-size: 19px;
+  margin: 15px 0px;
+  color: #333333;
+  font-weight: 700;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  width: 57px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5c3cb;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.4s all;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 4px solid #fff;
+  position: absolute;
+  background-color: #c5c3cb;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.4s all;
+}
+.timeline-container .vertical-scrollable-timeline li .icon-holder i {
+  font-size: 25px;
+  color: #fff;
+}
+.timeline-container .vertical-scrollable-timeline li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background-color: transparent;
+  left: 48px;
+  z-index: 0;
+}
+.timeline-container .vertical-scrollable-timeline li:last-child::before {
+  width: 58px;
+  left: 48px;
+  
+}
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder {
+  background-color: #d30017;
+}
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
+  background-color: #d30017;
+}
+.history-content{
+  margin: auto;
+}
+.history-image{
+padding: 0px;
+}
+.history-date {
+  margin-left: 15px;
+  font-weight: 600;
+}
+.division{
+  height:0.4px;
+  background-color:#c5c3cb;
+  margin-top:25px;
+}
+@media screen and (max-width: 760px){
+  .timeline-container{
+    padding: 2rem 1rem;
+  }
+  .timeline-container .vertical-scrollable-timeline li h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #d30017;
+    font-weight: 700;
+  }
+  .timeline-container .vertical-scrollable-timeline li {
+    padding: 25px 0px 45px 116px;
+}
+}
+
+/* ***************************************************** */
+/*======================================
+	Event Calendar CSS
+========================================*/
+.calendar{
+	background: #f6f6f6;
+}
+.calendar-content {
+    background: #fff;
+    padding: 20px;
+}
+
+.calendar .single-calendar {
+	position: relative;
+	background: #fff;
+	z-index: 22;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.single-calendar{
+  padding: 60px 0 !important;
+}
+
+.calendar .single-calendar i {
+	font-size: 35px;
+	left: 0;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center h1{
+  font-size:17px;
+  margin:25px 0px 20px 0px;
+  color :#333;
+}
+.center p{
+  margin-top:  20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.timeline-date{
+  margin-left:15px;
+  color:black;
+}
+.timeline-event{
+  background-color: #333;
+  color: white;
+  border-radius: 3px;
+  padding: 9px 15px;
+}
+ .timeline-event:hover {
+  background-color: #d30017;
+  cursor:pointer;
+}
+/* Slider Meta */
+
+.calendar button {
+	background: transparent;
+	border: 0px solid;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 28px;
+	top: 50%;
+	padding: 0;
+	opacity: 1;
+	margin: -25px 0 0;
+	border-radius: 100%;
+	display: block;
+	cursor:pointer;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+  color: #d30017;
+}
+.calendar button:hover{
+	color: #fff;
+  background-color: #d30017;
+}
+.calendar button.Prev{
+	left:-60px;
+}
+.calendar button.Next{
+	right:-60px;
+}
+
+/* calendar Single */
+.calendar.single{
+	padding:50px 0 80px;
+}
+.calendar.single .calendar-main{
+	background:#fff;
+	padding:15px;
+	margin-top: 30px;
+}
+/* Slider Meta */
+.calendar.single .owl-controls .owl-dots {
+	position: absolute;
+    left: 6px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.5);
+    top: 50%;
+    padding: 20px 15px;
+    margin-top: -47px;
+    border-radius: 5px;
+}
+.calendar.single .owl-controls .owl-dots .owl-dot {
+	display: block;
+	margin-bottom:10px;
+}
+.calendar.single .owl-controls .owl-dots .owl-dot:last-child{
+	margin:0px;
+}
+.calendar.single .owl-controls .owl-dots .owl-dot span {
+	width: 12px;
+	height: 12px;
+	display: block;
+	border-radius: 100%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin:0;
+	background: #333;
+	position: relative;
+}
+.calendar.single .owl-controls .owl-dots .owl-dot:hover span{
+	border-color:transparent;
+} 
+.calendar.single .owl-controls .owl-dots .owl-dot span::before {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid;
+	content: "";
+	border-radius: 100%;
+	opacity:0;
+	visibility:hidden;
+}
+.calendar.single .owl-controls .owl-dots .owl-dot.active span:before{
+	opacity:1;
+	visibility:visible;
+}
+.calendar.single .calendar-content{
+	margin-top:30px;
+}
+.calendar.single .calendar-content p {
+	margin-bottom: 20px;
+}
+.calendar.single .calendar-content p:last-child{
+	margin-bottom:0px;
+}
+.center:hover img {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.arrow a:hover{
+ background-color: #333;
+ color: white;
+}
+/*======================================
+	Event Calendar CSS
+========================================*/
+/*new*/
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+.nav-bar-dropdown{
+  background-color: #333333 !important;
+  border: none !important;
+  font-size: 0.9rem !important;
+}
+.dropdown-item{
+  color: white !important;
+}
+.dropdown-item:hover{
+  background-color: #333!important;
+  color: #d30017 !important;
+}
+.slicknav_nav .slicknav_row{
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #333333;
+  color: #fff;
+  font-weight: 600;
+
+}

@@ -1,0 +1,5 @@
+@include('themes.default.common.header')
+@include('themes.default.common.enable')
+@yield('content')
+@include('themes.default.common.footer')
+@stack('scripts')

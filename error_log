@@ -1,0 +1,456 @@
+[24-Dec-2022 06:53:42 UTC] PHP Fatal error:  Declaration of App\Exceptions\Handler::report(Exception $exception) must be compatible with Illuminate\Foundation\Exceptions\Handler::report(Throwable $e) in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 37
+[24-Dec-2022 06:53:42 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 06:56:25 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 37
+[24-Dec-2022 06:56:25 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 06:58:44 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 06:58:44 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 06:59:42 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 06:59:42 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 07:00:02 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:00:02 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:811
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(805): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(637): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(781): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(164): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(108): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(94): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 07:02:12 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:02:12 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 07:02:38 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:02:38 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:809
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(809): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(691): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(796): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(269): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 811
+[24-Dec-2022 07:04:44 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:04:44 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:05:25 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:05:25 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:08:46 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:08:46 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:09:49 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:09:49 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:09:58 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:09:58 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:14:17 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:14:17 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:14:29 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:14:29 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:35:45 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:35:45 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[24-Dec-2022 07:40:42 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[24-Dec-2022 07:40:42 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:15:05 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:15:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:15:10 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:15:10 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:17:05 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:17:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:17:11 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:17:11 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Exceptions\Handler" does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#13 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#14 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Exceptions\Handler] does not exist. in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(185): Illuminate\Foundation\Bootstrap\HandleExceptions->getExceptionHandler()
+#10 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(171): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#11 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(209): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Illuminate\Contracts\Container\BindingResolutionException))
+#12 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#13 {main}
+  thrown in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:25:04 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:25:04 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[27-Dec-2022 08:25:54 UTC] PHP Fatal error:  Non-abstract method App\Exceptions\Handler::report() must contain body in /home/nrssportsfoundat/public_html/demo/app/Exceptions/Handler.php on line 40
+[27-Dec-2022 08:25:54 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Exceptions\Handler does not exist in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Exceptions\\...')
+#1 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Exceptions\\...')
+#2 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Exceptions\\...', Array, false)
+#3 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Exceptions\\...', Array, false)
+#4 /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Cont in /home/nrssportsfoundat/public_html/demo/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
