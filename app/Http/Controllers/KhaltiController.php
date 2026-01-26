@@ -19,7 +19,31 @@ class KhaltiController extends Controller
 
     public function paymentKhalti(Request $request)
     {
-       
+        // dd($request->all());
+        // 🔴 PRE-CHECK SLOT COUNT (UX protection)
+        
+        $totalRunners = Runner::where('paid_status', 1)
+            ->whereHas('members', function ($q) {
+                $q->where('event', 15);
+            })
+            ->count();
+
+        if ($totalRunners >= 1000) {
+            $message = 'Unfortunately, OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please check other available event.';
+
+            return view('themes.default.common.slot-full',compact('message'));
+        }
+        $count = Runner::where('paid_status', 1)
+            ->whereHas('members', function ($q) {
+                $q->where('event_category', 27);
+            })
+            ->count();
+
+        if ($count >= 25) {
+            $message = 'Unfortunately, the 1K event category is already full. Please check other available event categories.';
+
+            return view('themes.default.common.slot-full',compact('message'));
+        }
         $amt = $request->amount;
         $race =  $request->eventCategory;
         try {
@@ -34,7 +58,7 @@ class KhaltiController extends Controller
             
         } catch (GuzzleException $e) {
            
-            return redirect('index')->with('error', 'Network Error!');
+            return redirect('/')->with('error', 'Network Error!');
            
         }
        
@@ -52,23 +76,51 @@ class KhaltiController extends Controller
             $data = Runner::where('id', session::get('infoId'))->first();
           
             if($paymentStatus && $matchPidx && $matchTransactionId) {
+                // Count PAID runners for 1K event
+                $count = Runner::where('paid_status', 1)
+                    ->whereHas('members', function ($q) {
+                        $q->where('event_category', 27);
+                    })->count();
+
+                    
+                $totalRunners = Runner::where('paid_status', 1)
+                    ->whereHas('members', function ($q) {
+                        $q->where('event', 15);
+                    })
+                    ->count();
+
                 $data->ref_id = $jsonObj->transaction_id;
                 $data->entry_price = $jsonObj->total_amount / 100;
                 $data->paid_status = 1;
                 $data->payment_type = "Khalti";
                 $data->save();
-              
-                // Mail::to($data->members->email)->send(new SuccessMail($data->ref_id));
                 session::forget(['infoId']);
+
+                // Slot full → special message
+                if ($totalRunners >= 1000) {
+                    return redirect()
+                        ->route('khalti.message', $data->reg_no)
+                        ->with('message',
+                            'Unfortunately, OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please contact our team for refund or check other available event .'
+                    );
+                }
+                if ($count >= 25) {
+                    return redirect()
+                        ->route('khalti.message', $data->reg_no)
+                        ->with('message',
+                            'Payment successful, but Unfortunately the event is already full. Please contact our team for refund or category change.'
+                        );
+                }
+                // Mail::to($data->members->email)->send(new SuccessMail($data->ref_id));
                 return  redirect()->route('khalti.message', $data->reg_no)->with('message', 'Payment Verification Success.');
         } else {
             return  redirect()->route('khalti.message', $data->reg_no)->with('error', 'Payment Verification Failed!');
             }
         } catch (RequestException $e) {
-            return redirect()->route('index')->with('error', 'Something went wrong, Please Try Again!');
+            return redirect()->route('/')->with('error', 'Something went wrong, Please Try Again!');
             
         } catch (GuzzleException $e) {
-            return redirect()->route('index')->with('error', 'Network Error!');
+            return redirect()->route('/')->with('error', 'Network Error!');
         }
        
     }

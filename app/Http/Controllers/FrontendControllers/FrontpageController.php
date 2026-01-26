@@ -205,8 +205,10 @@ public function sendmail_contact(Request $request){
 }
 
 private function getCaptcha($Secretkey){
-  $secret = env('SECRET_KEY');
-  $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$Secretkey}");
+  $secret = config('services.recaptcha.secret_key');
+  $response = file_get_contents(
+    "https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$Secretkey}"
+  );
   $return = json_decode($response);
   return $return;
 }
@@ -224,7 +226,8 @@ public function postby_category($id){
 
  
   public function become_member(Request $request)
-    {
+  {
+      // dd($request->all());
         if($request->isMethod('get'))
         {      
             $event = EventModel::where('status','1')->first();
@@ -246,16 +249,16 @@ public function postby_category($id){
               'first_name'=>'required',
               'last_name'=>'required',
               'gender'=>'required',
-                'dob'=>'required',
-                'occupation'=>'required',
-                'nationality'=>'required',
-                'country'=>'required',
-                'city'=>'required',
-                'address'=>'required',
-                'tel_no'=>'required',
-                'mob_no'=>'required',
-                'email'=>'required|email',
-                'g-recaptcha-response' => 'required|captcha'
+              'dob'=>'required',
+              'occupation'=>'required',
+              'nationality'=>'required',
+              'country'=>'required',
+              'city'=>'required',
+              'address'=>'required',
+              'tel_no'=>'required',
+              'mob_no'=>'required',
+              'email'=>'required|email',
+              'g_recaptcha_response' => 'required'
             ]);
             if($request->event_category == 18){
                 $request->validate([
@@ -275,6 +278,33 @@ public function postby_category($id){
                    'dob' => ['required', 'numeric', 'min:12']
                 ]);
             }
+            if($request->event == '15'){
+              $totalRunners = Runner::where('paid_status', 1)
+                ->whereHas('members', function ($q) {
+                    $q->where('event', 15);
+                })
+                ->count();
+
+              if ($totalRunners >= 1000) {
+                return back()->withErrors([
+                  'event' => 'OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please check other available events.'
+                ]);
+              }
+            }
+            if($request->event_category == '27'){
+              $totalcount = Runner::where('paid_status', 1)
+                ->whereHas('members', function ($q) {
+                    $q->where('event_category', 27);
+                })
+                ->count();
+
+              if ($totalcount >= 25) {
+                return back()->withErrors([
+                    'event_category' => 'The 1K event is fully booked! All 25 participant slots have been filled. Please check other available event categories.'
+                ]);
+              }
+            }
+
         if(isset($request->conditions))
         {
             $data['first_name']=$request->first_name;
@@ -299,7 +329,7 @@ public function postby_category($id){
         }else{
           $ordering = Runner::max('reg_no');
           $ordering = $ordering + 1;
-           $data['reg_no']=$ordering;
+          $data['reg_no']=$ordering;
         }
         $store=Runner::create($data);         
         
