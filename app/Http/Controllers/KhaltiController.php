@@ -54,11 +54,11 @@ class KhaltiController extends Controller
             return redirect($responseObj->payment_url);
         } catch (RequestException $e) {
             
-            return redirect('khalti.message')->with('error', 'Something went wrong, Please Try Again!');
+            return redirect()->route('khalti.message')->with('error', 'Something went wrong, Please Try Again!');
             
         } catch (GuzzleException $e) {
            
-            return redirect('/')->with('error', 'Network Error!');
+            return redirect()->route('khalti.message')->with('error', 'Network Error!');
            
         }
        
@@ -100,15 +100,15 @@ class KhaltiController extends Controller
                 if ($totalRunners >= 1000) {
                     return redirect()
                         ->route('khalti.message', $data->reg_no)
-                        ->with('message',
+                        ->with('error',
                             'Unfortunately, OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please contact our team for refund or check other available event .'
                     );
                 }
                 if ($count >= 25) {
                     return redirect()
                         ->route('khalti.message', $data->reg_no)
-                        ->with('message',
-                            'Payment successful, but Unfortunately the event is already full. Please contact our team for refund or category change.'
+                        ->with('error',
+                            'Payment successful, but Unfortunately the event is already full. All 25 participant slots have been filled. Please contact our team for refund or category change.'
                         );
                 }
                 // Mail::to($data->members->email)->send(new SuccessMail($data->ref_id));
@@ -117,10 +117,10 @@ class KhaltiController extends Controller
             return  redirect()->route('khalti.message', $data->reg_no)->with('error', 'Payment Verification Failed!');
             }
         } catch (RequestException $e) {
-            return redirect()->route('/')->with('error', 'Something went wrong, Please Try Again!');
+            return redirect()->route('khalti.message')->with('error', 'Something went wrong, Please Try Again!');
             
         } catch (GuzzleException $e) {
-            return redirect()->route('/')->with('error', 'Network Error!');
+            return redirect()->route('khalti.message')->with('error', 'Network Error!');
         }
        
     }

@@ -119,10 +119,10 @@ class EsewaController extends Controller
                 Runner::where('ref_id', $oid)->update($data1);
 
                 if ($totalRunners >= 1000) {
-                    return redirect()->route('payment.response', $find->ref_id)->with(['success_message' => 'Payment Successful. But Unfortunately, OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please contact our team for refund or check other available event.', 'reg_no' => $payment->reg_no]);
+                    return redirect()->route('payment.response', $find->ref_id)->with(['failure_message' => 'Payment Successful. But Unfortunately, OneRun 2026 event is fully booked! All 1000 participant slots have been filled. Please contact our team for refund or check other available event.', 'reg_no' => $payment->reg_no]);
                 }
                 if ($count >= 25) {
-                    return redirect()->route('payment.response', $find->ref_id)->with(['success_message' => 'Payment Successful. But Unfortunately, the 1K event slot is already full. Please contact our team for refund or category change.', 'reg_no' => $payment->reg_no]);
+                    return redirect()->route('payment.response', $find->ref_id)->with(['failure_message' => 'Payment Successful. But Unfortunately, the 1K event slot is already full. Please contact our team for refund or category change.', 'reg_no' => $payment->reg_no]);
                 }
 
             }
