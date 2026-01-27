@@ -55,14 +55,17 @@ class FrontpageController extends Controller
     $partner = PostModel::where('post_type', '46')->first();
     $achievement = PostTypeModel::where('id', 42)->first();
     $event = PostTypeModel::where('id', '45')->first();
-    $events = PostModel::where('post_type', '45')->where('status', 1)->orderBy('post_order', 'desc')->get();
+    $events = PostModel::where('post_type', '45')->where(['status'=>'1', 'is_open'=>'1'])->orderBy('post_order', 'desc')->get();
     $popup = PostModel::where('post_category', '16')->orderBy('post_order', 'asc')->get();
+
+    // dd($events);
     return view('themes.default.frontpage', compact('achievement', 'banner', 'about', 'service', 'testimonial', 'blog', 'logo', 'partner', 'blogs', 'services', 'event', 'events', 'popup'));
 
   }
 
   public function posttype(Request $request, $uri)
   {
+    // dd('test');
     if (!check_posttype_uri($uri)) {
       abort(404);
     }
@@ -72,8 +75,8 @@ class FrontpageController extends Controller
       $data['template'] = $data['template'];
     }
     if ($data) {
-      $posts = PostModel::where(['post_type' => $data->id, 'status' => '1'])->orderBy('post_order', 'desc')->get();
-      $postasc = PostModel::where(['post_type' => $data->id, 'status' => '1'])->orderBy('post_order', 'asc')->get();
+      $posts = PostModel::where(['post_type' => $data->id, 'status' => '1','is_open'=>'1'])->orderBy('post_order', 'desc')->get();
+      $postasc = PostModel::where(['post_type' => $data->id, 'status' => '1','is_open'=>'1'])->orderBy('post_order', 'asc')->get();
     }
     $country = CountryModel::all();
     $category = PostCategoryModel::all();
@@ -109,8 +112,9 @@ class FrontpageController extends Controller
     $gallery = PostImageModel::where('post_id', $data['id'])->get();
     $documents = PostDocModel::where('post_id', $data['id'])->orderBy('ordering', 'desc')->get();
     $pos_type = PostTypeModel::where('id', $data->post_type)->first();
-    $related = PostModel::where('post_type', $data['post_type'])->where('post_parent', '=', 0)->where('id', '!=', $data->id)->get();
+    $related = PostModel::where('post_type', $data['post_type'])->where('post_parent', '=', 0)->where('id', '!=', $data->id)->where(['status'=>'1', 'is_open'=>'1'])->get();
 
+    // dd('test',$related,$data);
 
     return view('themes.default.' . $data['template'] . '', compact('related', 'data', 'data_child', 'associated_posts', 'documents', 'pos_type', 'gallery'));
   }

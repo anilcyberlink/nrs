@@ -41,7 +41,17 @@
                                        value="{{$data->sub_title}}"/>
                             </div>
                         </div>
-                    </div>                 
+                    </div>          
+                    @if(Request::segment(2) == 'our-events')        
+                        <div class="form-group">
+                            <label for="inputStandard" class="col-lg-2 control-label">Pop Up Message</label>
+                            <div class="col-lg-9">
+                                <div class="bs-component">
+                                    <textarea type="text" name="associated_title" class="form-control"  rows="3">{{$data->associated_title}}</textarea>
+                                </div>
+                            </div>
+                        </div>      
+                    @endif           
                    @if(Request::segment(2) == 'contact-us')                    
 
                     <!--<div class="form-group">-->
@@ -174,7 +184,7 @@
                 <div class="sid_ mb10">
                     <div class="hd_show_con">
                         <div class="publice_edi">
-                            Status: <span class="text-primary">{{ ($data->status == 1)?'Active':'InActive' }}</span>
+                            Show in home: <span class="text-primary">{{ ($data->status == 1)?'Active':'InActive' }}</span>
                         </div>
                     </div>
                     <footer>
@@ -185,6 +195,21 @@
                         <div class="clearfix"></div>
                     </footer>
                     <div class="clearfix"></div>
+                </div>
+
+                <div class="sid_ mb10">
+                    <label class="field select">Status
+                        <select id="is_open" name="is_open" class="form-control" required>
+                            <option value="" disabled>Select Event Status</option>
+                            <option value="1" {{ old('is_open', $data->is_open) == 1 ? 'selected' : '' }}>
+                                Active
+                            </option>
+                            <option value="0" {{ old('is_open', $data->is_open) == 0 ? 'selected' : '' }}>
+                                Completed
+                            </option>
+                        </select>
+                        <i class="arrow"></i>
+                    </label>
                 </div>
 
                 <div class="sid_ mb10">
@@ -334,21 +359,23 @@
                     </div>
                 </div>
 
-                <!--<div class="sid_ mb10">-->
-                <!--    <h4> Banner </h4>-->
-                <!--    <div class="hd_show_con">-->
-                <!--        <div id="xedit-demo">-->
-                <!--            @if($data->banner)-->
-                <!--                <span class="bannerid{{$data->id}}">-->
-                <!--      <a href="#{{$data->id}}" class="delete_banner">X</a>-->
-                <!--      <img src="{{ asset(env('PUBLIC_PATH').'uploads/medium/' . $data->banner) }}" width="150"/>-->
-                <!--      <hr>-->
-                <!--      </span>-->
-                <!--            @endif-->
-                <!--            <input type="file" name="banner"/>-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>                -->
+                @if(Request::segment(2)=='our-events')
+                    <div class="sid_ mb10">
+                        <h4> Route Map </h4>
+                        <div class="hd_show_con">
+                            <div id="xedit-demo">
+                                @if($data->banner)
+                                    <span class="bannerid{{$data->id}}">
+                                        <a href="#{{$data->id}}" class="delete_banner">X</a>
+                                        <img src="{{ asset(env('PUBLIC_PATH').'uploads/medium/' . $data->banner) }}" width="150"/>
+                                        <hr>
+                                    </span>
+                                @endif
+                                <input type="file" name="banner"/>
+                            </div>
+                        </div>
+                    </div>
+                @endif
 
             </div>
         </div>

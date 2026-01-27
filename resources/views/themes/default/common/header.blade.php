@@ -76,7 +76,7 @@
             "closeButton": true,
             "progressBar": true,
             "positionClass": "toast-top-right",
-            "timeOut": "5000",
+            "timeOut": "6000",
             "extendedTimeOut": "1000",
             "showDuration": "300",
             "hideDuration": "300",

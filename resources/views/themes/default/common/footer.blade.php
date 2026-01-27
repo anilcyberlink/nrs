@@ -99,5 +99,40 @@
         upload_id.style.display = 'block';
     }
 </script>
+<script>
+jQuery(function ($) {
+
+  $('.openEventPopup').on('click', function () {
+
+    const url = $(this).data('url');
+    const isExternal = $(this).data('external') == 1;
+
+    $('#popupTitle').text($(this).data('title'));
+    $('#popupBanner').attr('src', $(this).data('banner'));
+    $('#popupDate').text($(this).data('date'));
+    $('#popupExcerpt').text($(this).data('excerpt'));
+
+    $('#popupUrl')
+      .attr('href', url)
+      .attr('target', isExternal ? '_blank' : '_self')
+      .attr('rel', isExternal ? 'noopener noreferrer' : '');
+
+    $('.event-popup-overlay').fadeIn(200);
+  });
+
+  $('.event-close').on('click', function () {
+    $('.event-popup-overlay').fadeOut(200);
+  });
+
+  $('.event-popup-overlay').on('click', function (e) {
+    if (!$(e.target).closest('.event-popup').length) {
+      $(this).fadeOut(200);
+    }
+  });
+
+});
+
+</script>
+
 </body>
 </html>

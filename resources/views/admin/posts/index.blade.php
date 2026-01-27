@@ -21,7 +21,7 @@
               <th class="text-center"> SN </th>
               <th>Post Name</th>
               <!-- <th class="text-center">GP</th>    -->
-              <th class="text-center">Status</th>
+              <th class="text-center">Show in home?</th>
               <th class="text-center">Visiter</th>
               <th class="text-center">Order</th>
               <th class="text-center"> &nbsp; </th>
