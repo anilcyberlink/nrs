@@ -23,7 +23,7 @@ class PostController extends Controller
       $posttype = PostTypeModel::where('uri',$uri)->first();
       if($posttype){
         $posttypeId = $posttype->id;
-        $data = PostModel::where(['post_type'=>$posttypeId,'post_parent'=>0])->orderBy('post_order','asc')->get();
+        $data = PostModel::where(['post_type'=>$posttypeId,'post_parent'=>0])->orderBy('post_order','desc')->get();
         return view('admin.posts.index', compact('data'));
       }
       return redirect('/dashboard');
@@ -493,11 +493,12 @@ class PostController extends Controller
       $data->external_link = $request->external_link;
       $data->price = $request->price;
       $data->post_tags = $request->post_tags;
-       $isChecked = $request->has('project_status');
+      $data->is_open = $request->is_open;
+      $isChecked = $request->has('project_status');
       $data->project_status = ($isChecked)?'1':'0';
       $isChecked = $request->has('show_in_home');
       $data->show_in_home = ($isChecked)?'1':'0';
-        $data->home_order = $request->home_order;
+      $data->home_order = $request->home_order;
           /************Detach******************/
       $_data = PostModel::find($id);
       $_data->portfolio()->detach();

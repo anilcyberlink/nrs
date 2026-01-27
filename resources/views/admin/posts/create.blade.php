@@ -42,6 +42,19 @@
                             </div>
                         </div>
                     </div>               
+                    <div class="form-group">
+                        <label for="inputStandard" class="col-lg-2 control-label">Pop Up Message</label>
+                        <div class="col-lg-9">
+                            <div class="bs-component">
+                                <textarea 
+                                    name="associated_title"
+                                    id="associated_title"
+                                    class="form-control"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+                        </div>
+                    </div>               
                    
 
                     <div class="form-group">
@@ -148,6 +161,16 @@
                     <div class="clearfix"></div>
                 </div>
 
+                <div class="sid_ mb10">
+                    <label  class="field select">Status
+                        <select id="is_open" name="is_open" required>
+                            <option value="" selected disabled>Select Event Status</option>
+                            <option value="1" >Active</option>
+                            <option value="0" >Completed</option>
+                        </select>
+                        <i class="arrow"></i>
+                    </label>
+                </div>
                 <div class="sid_ mb10">
                     <label class="field select">
                         <select id="template" name="template">
@@ -272,15 +295,16 @@
                     </div>
                 </div>
 
-                <!--<div class="sid_ mb10">-->
-                <!--    <h4> Banner </h4>-->
-                <!--    <div class="hd_show_con">-->
-                <!--        <div id="xedit-demo">-->
-                <!--            <input type="file" name="banner"/>-->
-                <!--        </div>-->
-                <!--    </div>-->
-                <!--</div>-->
-                
+                @if(Request::segment(2)=='our-events')
+                    <div class="sid_ mb10">
+                        <h4> Route Map </h4>
+                        <div class="hd_show_con">
+                            <div id="xedit-demo">
+                                <input type="file" name="banner"/>
+                            </div>
+                        </div>
+                    </div>
+                @endif
 
             </div>
 

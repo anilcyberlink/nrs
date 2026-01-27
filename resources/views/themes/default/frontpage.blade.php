@@ -123,35 +123,63 @@
 		<div class="row">
 			<div class="col-12" style="padding:0px;">
 				<div class="calendar-slider">
-					<!-- Single Service -->
 					@foreach($events as $row)
-					<div class="single-calendar">
-						<div class="center">
-							@if($row->page_thumbnail)
-                            <img src="{{asset('uploads/original/'.$row->page_thumbnail)}} " alt="" class="responsive" style="width:200px;height: 250px;object-fit: contain;">
-                            @else
-                            <img src="{{asset('themes-assets/images/default.png')}} " alt="" class="responsive" style="width:200px;height: 250px;object-fit: contain;">
-                            @endif
-							<h1>{{$row->post_title}}</h1>
-							<p>
-							   <a href="{{$row->external_link}}"><span class="timeline-event">Event</span></a>
-							<span class="timeline-date">{{$row->sub_title}}</span>
-							</p>
-						</div>
-					</div>
+            <div class="single-calendar">
+              <div class="center">
+                <img src="{{ $row->page_thumbnail ? asset('uploads/original/'.$row->page_thumbnail) : asset('themes-assets/images/default.png') }}"
+                  alt="{{ $row->post_title }}"
+                  class="responsive openEventPopup"
+                  data-title="{{ $row->post_title }}"
+                  data-banner="{{ $row->page_thumbnail ? asset('uploads/original/'.$row->page_thumbnail) : asset('themes-assets/images/default.png') }}"
+                  data-date="{{ $row->sub_title }}"
+                  data-excerpt="{{ strip_tags($row->associated_title) }}"
+                  data-url="{{ $row->external_link ? $row->external_link : route('page.pagedetail', ['uri' => $row['uri']]) }}"
+                  data-external="{{ $row->external_link ? '1' : '0' }}"
+                  style="width:200px;height:250px;object-fit:contain;"
+                >
+                  
+                <h1>{{$row->post_title}}</h1>
+                <p>
+                  <a href="javascript:void(0)"
+                    class="openEventPopup"
+                    data-title="{{ $row->post_title }}"
+                    data-banner="{{ $row->page_thumbnail ? asset('uploads/original/'.$row->page_thumbnail) : asset('themes-assets/images/default.png') }}"
+                    data-date="{{ $row->sub_title }}"
+                    data-excerpt="{{ strip_tags($row->associated_title) }}"
+                    data-url="{{ $row->external_link ? $row->external_link : route('page.pagedetail', ['uri' => $row['uri']]) }}"
+                    data-external="{{ $row->external_link ? '1' : '0' }}">
+                    <span class="timeline-event">Event</span>
+                  </a>
+
+                  <span class="timeline-date">{{$row->sub_title}}</span>
+                </p>
+              </div>
+            </div>
 					@endforeach
-					<!-- End Single Service -->
-					
 				</div>
 			</div>
 			<div class="col-12 d-flex justify-content-center " style="padding:25px;" >
 				<div class="arrow">
 					<a href="{{ url('page/' . posttype_url($event->uri)) }}" class="btn primary">Know More</a>
 				</div>
-		    </div>
+		  </div>
 		</div>
 	</div>
 </section>
+<!-- pop up madal -->
+<div class="event-popup-overlay" style="display:none;">
+  <div class="event-popup">
+    <span class="event-close">&times;</span>
+
+    <h3 id="popupTitle"></h3>
+    <img id="popupBanner" src="" alt="" />
+    <h4 class="popup-date" id="popupDate"></h4>
+    <p id="popupExcerpt"></p>
+
+    <a href="#" id="popupUrl" class="btn primary">View Detail</a>
+  </div>
+</div>
+
 <!-- End Event Calendar -->
 @endif
 @if($services->count()>0)
@@ -374,4 +402,45 @@
  <!--modal end -->
 @endforeach
 @endif
+<style>
+  .event-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .event-popup {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+    text-align: center;
+  }
+
+  .event-popup img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .popup-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+
+  .event-close {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+</style>
 @stop
