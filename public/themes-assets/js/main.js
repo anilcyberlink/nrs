@@ -164,7 +164,48 @@
 			items:1,
 			dots:true,
 			nav:false ,
-		});				
+		});
+
+		/*====================================
+			Event Slider JS
+		======================================*/ 
+		$(".event-slider").slick({
+			autoplay:true,
+			speed: 5000,
+			autoplaySpeed: 0,
+			slidesToShow: 4,
+			pauseOnHover: false,
+			centerMode: false,
+			centerPadding: '0px',
+			dots: false,
+			arrows:true,
+			cssEase: 'linear',
+			draggable: true,
+			prevArrow: '<button class="Prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></button>',
+			nextArrow: '<button class="Next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>',
+				responsive: [{
+					breakpoint: 800,
+					settings: {
+						arrows:true,
+						slidesToShow: 2,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						arrows:false,
+						slidesToShow: 1,
+					}
+				},
+				{
+					breakpoint: 350,
+					settings: {
+						arrows:false,
+						slidesToShow: 1,
+					}
+				},
+			]
+		});
 		
 		/*====================================
 			Portfolio Single SLider JS

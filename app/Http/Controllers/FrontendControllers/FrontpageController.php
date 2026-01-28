@@ -65,7 +65,6 @@ class FrontpageController extends Controller
 
   public function posttype(Request $request, $uri)
   {
-    // dd('test');
     if (!check_posttype_uri($uri)) {
       abort(404);
     }
@@ -83,7 +82,11 @@ class FrontpageController extends Controller
     $documents = PostDocModel::where('post_id', $data['id'])->orderBy('ordering', 'desc')->get();
     $partner = PostModel::where('post_type', '43')->first();
     $images = PostImageModel::where('post_id', '228')->get();
-    return view('themes.default.' . $data['template'] . '', compact('images', 'category', 'data', 'documents', 'posts', 'country', 'partner', 'postasc'));
+    $event = PostTypeModel::where('id', '45')->first();
+    $events = PostModel::where('post_type', '45')->where(['status'=>'1', 'is_open'=>'0'])->orderBy('post_order', 'desc')->get();
+    
+    // dd($event,$events);
+    return view('themes.default.' . $data['template'] . '', compact('images', 'category', 'data', 'documents', 'posts', 'country', 'partner', 'postasc','event','events'));
   }
 
   public function pagedetail($uri)
